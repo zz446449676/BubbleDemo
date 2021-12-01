@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:onClick="removeTips"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.example.bubbledemo.view.BubbleView
+        android:id="@+id/bubble_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="6dp"
+        android:paddingTop="16dp"
+        android:paddingHorizontal="8dp"
+        app:background_color="@color/black"
+        app:direction="top"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.917"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:radius="4dp"
+        app:shadow_color="#999999">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:padding="8dp"
+            android:text="我們擬使用你的資料以推廣本公司旅遊產品及服務。我們需要取得你的同意後，才可如此使用你的個人資料。"
+            android:textColor="@color/white" />
+
+    </com.example.bubbledemo.view.BubbleView>
+</android.support.constraint.ConstraintLayout>
